@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: highload-presentation
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/highloaddb
+    username: highload_user
+    password: highload_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 50 # необходимо для массовой вставки
+        order_inserts: true
+        order_updates: true
+
+server:
+  port: 8081

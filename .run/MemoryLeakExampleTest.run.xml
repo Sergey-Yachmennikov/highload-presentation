@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MemoryLeakExampleTest" type="JUnit" factoryName="JUnit">
+    <module name="highload-presentation" />
+    <option name="PACKAGE_NAME" value="com.highload.highload_presentation.memory" />
+    <option name="MAIN_CLASS_NAME" value="com.highload.highload_presentation.memory.MemoryLeakExampleTest" />
+    <option name="METHOD_NAME" value="fillHeap_causesOutOfMemoryError" />
+    <option name="TEST_OBJECT" value="method" />
+    <option name="VM_PARAMETERS" value="-Xmx256m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$PROJECT_DIR$/heap.hprof" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
